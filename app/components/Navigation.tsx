@@ -56,6 +56,13 @@ export default function Navigation() {
               </Link>
               
               <Link
+                href="/estoque"
+                className={`px-3 py-2 rounded-md text-sm font-medium transition ${isActive('/estoque')}`}
+              >
+                📦 Estoque
+              </Link>
+              
+              <Link
                 href="/relatorios"
                 className={`px-3 py-2 rounded-md text-sm font-medium transition ${isActive('/relatorios')}`}
               >
