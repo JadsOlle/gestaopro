@@ -12,110 +12,111 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* Modo Escuro */
-html.dark {
-  --background: #111827;
-  --foreground: #f3f4f6;
-}
-
-html.dark body {
-  background-color: #111827;
-  color: #f3f4f6;
-}
-
-html.dark nav {
-  background-color: #1f2937;
-  border-color: #374151;
-}
-
-html.dark .bg-white {
-  background-color: #1f2937 !important;
-}
-
-html.dark .bg-gray-50,
-html.dark .from-gray-50,
-html.dark .to-gray-100,
-html.dark .bg-gradient-to-br,
-html.dark [class*="bg-gradient"] {
+/* Modo Escuro - Seletores Agressivos */
+html.dark,
+html.dark body,
+html.dark main,
+html.dark div[class*="min-h-screen"],
+html.dark div[class*="bg-gray-50"],
+html.dark div[class*="bg-gradient"] {
   background-color: #111827 !important;
-}
-
-html.dark main {
-  background-color: #111827 !important;
-}
-
-html.dark .min-h-screen {
-  background-color: #111827 !important;
-}
-
-html.dark .bg-gray-100 {
-  background-color: #1f2937 !important;
-}
-
-html.dark .text-gray-900 {
   color: #f3f4f6 !important;
 }
 
-html.dark .text-gray-800 {
-  color: #e5e7eb !important;
-}
-
-html.dark .text-gray-700 {
-  color: #d1d5db !important;
-}
-
-html.dark .text-gray-600 {
-  color: #9ca3af !important;
-}
-
-html.dark .text-gray-500 {
-  color: #6b7280 !important;
-}
-
-html.dark .text-gray-400 {
-  color: #9ca3af !important;
-}
-
-html.dark .text-gray-300 {
-  color: #d1d5db !important;
-}
-
-html.dark .text-blue-600 {
-  color: #60a5fa !important;
-}
-
-html.dark .text-blue-500 {
-  color: #3b82f6 !important;
-}
-
-html.dark .border-gray-200 {
+html.dark nav {
+  background-color: #1f2937 !important;
   border-color: #374151 !important;
 }
 
-html.dark .border-gray-300 {
+html.dark [class*="bg-white"] {
+  background-color: #1f2937 !important;
+}
+
+html.dark [class*="bg-gray-100"] {
+  background-color: #1f2937 !important;
+}
+
+html.dark [class*="text-white"] {
+  color: #ffffff !important;
+}
+
+html.dark [class*="text-gray-900"] {
+  color: #f3f4f6 !important;
+}
+
+html.dark [class*="text-gray-800"] {
+  color: #e5e7eb !important;
+}
+
+html.dark [class*="text-gray-700"] {
+  color: #d1d5db !important;
+}
+
+html.dark [class*="text-gray-600"] {
+  color: #9ca3af !important;
+}
+
+html.dark [class*="text-gray-500"] {
+  color: #6b7280 !important;
+}
+
+html.dark [class*="text-gray-400"] {
+  color: #9ca3af !important;
+}
+
+html.dark [class*="text-gray-300"] {
+  color: #d1d5db !important;
+}
+
+html.dark [class*="text-blue-600"] {
+  color: #60a5fa !important;
+}
+
+html.dark [class*="text-blue-500"] {
+  color: #3b82f6 !important;
+}
+
+html.dark [class*="border-gray-200"] {
+  border-color: #374151 !important;
+}
+
+html.dark [class*="border-gray-300"] {
   border-color: #4b5563 !important;
 }
 
 html.dark input,
 html.dark select,
 html.dark textarea {
-  background-color: #374151;
-  border-color: #4b5563;
-  color: #f3f4f6;
+  background-color: #374151 !important;
+  border-color: #4b5563 !important;
+  color: #f3f4f6 !important;
 }
 
 html.dark input::placeholder,
 html.dark select::placeholder,
 html.dark textarea::placeholder {
-  color: #9ca3af;
+  color: #9ca3af !important;
 }
 
 html.dark table thead {
-  background-color: #374151;
+  background-color: #374151 !important;
 }
 
 html.dark table tbody tr:hover {
-  background-color: #374151;
+  background-color: #374151 !important;
+}
+
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6 {
+  color: #f3f4f6 !important;
+}
+
+html.dark p {
+  color: #d1d5db !important;
 }
 
 body {
