@@ -54,6 +54,13 @@ export default function Navigation() {
               >
                 👥 Contatos
               </Link>
+              
+              <Link
+                href="/relatorios"
+                className={`px-3 py-2 rounded-md text-sm font-medium transition ${isActive('/relatorios')}`}
+              >
+                📊 Relatórios
+              </Link>
             </div>
           </div>
         </div>

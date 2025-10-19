@@ -85,9 +85,12 @@ export default function VendasPage() {
     <div className="max-w-7xl mx-auto p-8">
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-3xl font-bold">Vendas</h1>
-        <div className="text-sm text-gray-600">
-          Total de vendas: <span className="font-bold text-lg">{sales.length}</span>
-        </div>
+        <a
+          href="/vendas/nova"
+          className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition font-medium"
+        >
+          + Nova Venda
+        </a>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
