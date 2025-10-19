@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createClient } from '@/lib/supabase/server'
+import { supabaseAdmin } from '@/lib/supabase/server'
 
 export async function GET(request: NextRequest) {
   try {
-    const supabase = await createClient()
+    const supabase = supabaseAdmin
     
     const { searchParams } = new URL(request.url)
     const limit = parseInt(searchParams.get('limit') || '100')
@@ -38,7 +38,7 @@ export async function GET(request: NextRequest) {
 
 export async function POST(request: NextRequest) {
   try {
-    const supabase = await createClient()
+    const supabase = supabaseAdmin
     const body = await request.json()
 
     const { product_id, type, quantity, reason } = body
