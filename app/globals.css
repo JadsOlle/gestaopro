@@ -1,88 +1,89 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
 /* Modo Escuro */
-.dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+html.dark {
+  --background: #111827;
+  --foreground: #f3f4f6;
 }
 
-.dark body {
-  @apply bg-gray-900 text-gray-100;
+html.dark body {
+  background-color: #111827;
+  color: #f3f4f6;
 }
 
-.dark nav {
-  @apply bg-gray-800 border-gray-700;
+html.dark nav {
+  background-color: #1f2937;
+  border-color: #374151;
 }
 
-.dark .bg-white {
-  @apply bg-gray-800;
+html.dark .bg-white {
+  background-color: #1f2937 !important;
 }
 
-.dark .bg-gray-50 {
-  @apply bg-gray-900;
+html.dark .bg-gray-50 {
+  background-color: #111827 !important;
 }
 
-.dark .bg-gray-100 {
-  @apply bg-gray-800;
+html.dark .bg-gray-100 {
+  background-color: #1f2937 !important;
 }
 
-.dark .text-gray-900 {
-  @apply text-gray-100;
+html.dark .text-gray-900 {
+  color: #f3f4f6 !important;
 }
 
-.dark .text-gray-800 {
-  @apply text-gray-200;
+html.dark .text-gray-800 {
+  color: #e5e7eb !important;
 }
 
-.dark .text-gray-700 {
-  @apply text-gray-300;
+html.dark .text-gray-700 {
+  color: #d1d5db !important;
 }
 
-.dark .text-gray-600 {
-  @apply text-gray-400;
+html.dark .text-gray-600 {
+  color: #9ca3af !important;
 }
 
-.dark .border-gray-200 {
-  @apply border-gray-700;
+html.dark .border-gray-200 {
+  border-color: #374151 !important;
 }
 
-.dark .border-gray-300 {
-  @apply border-gray-600;
+html.dark .border-gray-300 {
+  border-color: #4b5563 !important;
 }
 
-.dark .hover\:bg-gray-50:hover {
-  @apply bg-gray-700;
+html.dark input,
+html.dark select,
+html.dark textarea {
+  background-color: #374151;
+  border-color: #4b5563;
+  color: #f3f4f6;
 }
 
-.dark .hover\:bg-gray-100:hover {
-  @apply bg-gray-700;
+html.dark input::placeholder,
+html.dark select::placeholder,
+html.dark textarea::placeholder {
+  color: #9ca3af;
 }
 
-.dark input,
-.dark select,
-.dark textarea {
-  @apply bg-gray-700 border-gray-600 text-gray-100;
+html.dark table thead {
+  background-color: #374151;
 }
 
-.dark input:focus,
-.dark select:focus,
-.dark textarea:focus {
-  @apply ring-blue-500 border-blue-500;
-}
-
-.dark table thead {
-  @apply bg-gray-700;
-}
-
-.dark table tbody tr:hover {
-  @apply bg-gray-700;
+html.dark table tbody tr:hover {
+  background-color: #374151;
 }
 
 body {
