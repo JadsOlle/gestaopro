@@ -29,7 +29,6 @@ export default function Navigation() {
         { title: 'DRE', path: '/financeiro/dre' },
         { title: 'Transações', path: '/transacoes' },
         { title: 'Categorias', path: '/financeiro/categorias' },
-        { title: 'Contas Bancárias', path: '/financeiro/contas-bancarias' },
       ],
     },
     {
