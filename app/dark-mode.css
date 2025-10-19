@@ -1,31 +1,42 @@
-/* Modo Escuro - Prioridade Máxima */
+/* Modo Escuro - Ultra Agressivo */
 
-html.dark,
+html.dark {
+  background-color: #111827 !important;
+}
+
 html.dark body {
   background-color: #111827 !important;
   color: #f3f4f6 !important;
 }
 
-html.dark main,
-html.dark main > div,
-html.dark main > div > div {
+html.dark main {
   background-color: #111827 !important;
 }
 
-html.dark * {
-  border-color: #374151 !important;
+html.dark div {
+  background-color: transparent !important;
 }
 
-html.dark *[class*="bg-white"],
-html.dark *[class*="bg-gray-50"],
-html.dark *[class*="bg-gray-100"],
-html.dark *[class*="from-gray"],
-html.dark *[class*="to-gray"] {
+html.dark div[class*="bg-white"],
+html.dark div[class*="bg-gray-50"],
+html.dark div[class*="bg-gray-100"] {
   background-color: #1f2937 !important;
 }
 
-html.dark *[class*="text-white"] {
-  color: #ffffff !important;
+html.dark div[class*="from-gray"],
+html.dark div[class*="to-gray"],
+html.dark div[class*="bg-gradient"] {
+  background: linear-gradient(to bottom right, #111827, #1f2937) !important;
+}
+
+/* Cards escuros */
+html.dark div[class*="bg-white"] {
+  background-color: #1f2937 !important;
+}
+
+/* Textos */
+html.dark * {
+  color: #f3f4f6;
 }
 
 html.dark *[class*="text-gray-900"],
@@ -35,9 +46,12 @@ html.dark *[class*="text-gray-700"] {
 }
 
 html.dark *[class*="text-gray-600"],
-html.dark *[class*="text-gray-500"],
-html.dark *[class*="text-gray-400"] {
+html.dark *[class*="text-gray-500"] {
   color: #9ca3af !important;
+}
+
+html.dark *[class*="text-gray-400"] {
+  color: #6b7280 !important;
 }
 
 html.dark *[class*="text-blue-600"],
@@ -45,23 +59,41 @@ html.dark *[class*="text-blue-500"] {
   color: #60a5fa !important;
 }
 
-html.dark h1,
-html.dark h2,
-html.dark h3 {
-  color: #f3f4f6 !important;
+html.dark *[class*="text-white"] {
+  color: #ffffff !important;
 }
 
-html.dark p,
-html.dark span,
-html.dark div {
-  color: inherit !important;
+/* Bordas */
+html.dark * {
+  border-color: #374151 !important;
 }
 
+/* Inputs */
 html.dark input,
 html.dark select,
-html.dark textarea {
+html.dark textarea,
+html.dark button[class*="bg-white"] {
   background-color: #374151 !important;
   color: #f3f4f6 !important;
   border-color: #4b5563 !important;
+}
+
+/* Navegação */
+html.dark nav {
+  background-color: #1f2937 !important;
+  border-color: #374151 !important;
+}
+
+/* Tabelas */
+html.dark table {
+  background-color: #1f2937 !important;
+}
+
+html.dark thead {
+  background-color: #374151 !important;
+}
+
+html.dark tr:hover {
+  background-color: #374151 !important;
 }
 
