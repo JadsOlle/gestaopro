@@ -71,11 +71,34 @@ html.dark * {
 /* Inputs */
 html.dark input,
 html.dark select,
-html.dark textarea,
-html.dark button[class*="bg-white"] {
+html.dark textarea {
   background-color: #374151 !important;
   color: #f3f4f6 !important;
   border-color: #4b5563 !important;
+}
+
+/* Botões */
+html.dark button {
+  color: #f3f4f6 !important;
+}
+
+html.dark button[class*="bg-white"],
+html.dark a[class*="bg-white"] {
+  background-color: #374151 !important;
+  color: #f3f4f6 !important;
+  border-color: #4b5563 !important;
+}
+
+html.dark button[class*="bg-blue"],
+html.dark a[class*="bg-blue"] {
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+}
+
+html.dark button[class*="bg-green"],
+html.dark a[class*="bg-green"] {
+  background-color: #16a34a !important;
+  color: #ffffff !important;
 }
 
 /* Navegação */
