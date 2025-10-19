@@ -1,0 +1,67 @@
+/* Modo Escuro - Prioridade Máxima */
+
+html.dark,
+html.dark body {
+  background-color: #111827 !important;
+  color: #f3f4f6 !important;
+}
+
+html.dark main,
+html.dark main > div,
+html.dark main > div > div {
+  background-color: #111827 !important;
+}
+
+html.dark * {
+  border-color: #374151 !important;
+}
+
+html.dark *[class*="bg-white"],
+html.dark *[class*="bg-gray-50"],
+html.dark *[class*="bg-gray-100"],
+html.dark *[class*="from-gray"],
+html.dark *[class*="to-gray"] {
+  background-color: #1f2937 !important;
+}
+
+html.dark *[class*="text-white"] {
+  color: #ffffff !important;
+}
+
+html.dark *[class*="text-gray-900"],
+html.dark *[class*="text-gray-800"],
+html.dark *[class*="text-gray-700"] {
+  color: #f3f4f6 !important;
+}
+
+html.dark *[class*="text-gray-600"],
+html.dark *[class*="text-gray-500"],
+html.dark *[class*="text-gray-400"] {
+  color: #9ca3af !important;
+}
+
+html.dark *[class*="text-blue-600"],
+html.dark *[class*="text-blue-500"] {
+  color: #60a5fa !important;
+}
+
+html.dark h1,
+html.dark h2,
+html.dark h3 {
+  color: #f3f4f6 !important;
+}
+
+html.dark p,
+html.dark span,
+html.dark div {
+  color: inherit !important;
+}
+
+html.dark input,
+html.dark select,
+html.dark textarea {
+  background-color: #374151 !important;
+  color: #f3f4f6 !important;
+  border-color: #4b5563 !important;
+}
+
