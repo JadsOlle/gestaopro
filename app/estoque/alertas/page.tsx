@@ -440,14 +440,14 @@ export default function AlertasPage() {
 
                 <div className="flex gap-2 ml-4">
                   <button
-                    onClick={() => alert('Comprar produto')}
+                    onClick={() => window.alert('Comprar produto')}
                     className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition text-sm font-medium flex items-center gap-2"
                   >
                     <ShoppingCart className="w-4 h-4" />
                     Comprar
                   </button>
                   <button
-                    onClick={() => alert('Adicionar estoque manualmente')}
+                    onClick={() => window.alert('Adicionar estoque manualmente')}
                     className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition text-sm font-medium flex items-center gap-2"
                   >
                     <Plus className="w-4 h-4" />
