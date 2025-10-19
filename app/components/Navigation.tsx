@@ -81,7 +81,6 @@ export default function Navigation() {
         { title: 'Empresa', path: '/configuracoes/empresa' },
         { title: 'Usuários', path: '/configuracoes/usuarios' },
         { title: 'Preferências', path: '/configuracoes/preferencias' },
-        { title: 'White Label', path: '/configuracoes/whitelabel' },
       ],
     },
   ]
